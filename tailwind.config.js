@@ -11,7 +11,9 @@ module.exports = {
         quaternary: '#dbd8e3'
       }
     },
-    
+    fontFamily: {
+      'sans': ['Roboto', '"Helvetica Neue"', 'sans-serif']
+    }
   },
   variants: {
     extend: {},
