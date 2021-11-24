@@ -1,13 +1,12 @@
 export default function SobreMim(){
     return (
-        <h1 className="text-center">
-            Sobre Mim: 
-            <br />
+        <div className="text-center m-3">
+            <strong>Sobre Mim:</strong>  
             <p className="text-justify">
             Estudante de economia interessado em:
             investimento, gestão, programação e dados. 
             Tudo aquilo que não sei é algo novo que posso aprender!
             </p>
-        </h1>
+        </div>
     )
 }
