@@ -24,23 +24,18 @@ const listaHabilidades = [
     }
 ]
 
-export default function ListaHabilitidades() {
+function ListaHabilitidades({habilidade}) {
     return (
         <ul>
-            {listaHabilidades.map((habilidades) => {
+            <label>{habilidade.tipo}</label>
+
+            {habilidade.habilidades.map((habilidade, index) => {
                 return (
-                    <div>
-                        <label>{habilidades.tipo}</label>
-
-                        {habilidades.habilidades.map((habilidade, index) => {
-                            return (
-                                <li key={index}>{habilidade}</li>
-                            )
-                        })}
-
-                    </div>
+                    <li key={index}>{habilidade}</li>
                 )
             })}
         </ul>
     )
 }
+
+export { listaHabilidades, ListaHabilitidades }

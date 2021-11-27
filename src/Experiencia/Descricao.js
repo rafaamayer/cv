@@ -2,7 +2,7 @@ const descricoes = [
     {
         id: 1,
         titulo: 'Estagiário de Inteligência de Mercado',
-        empresa:'Associação Empresarial de Florianópolis (02/21 - 07/21)',
+        empresa: 'Associação Empresarial de Florianópolis (02/21 - 07/21)',
         href: '',
         descricao: '', //Optional
         atividades: [
@@ -15,7 +15,7 @@ const descricoes = [
     {
         id: 2,
         titulo: 'Estagiário de Desenvolvimento',
-        empresa:'BIX Tecnologia (07/21 - Atual)',
+        empresa: 'BIX Tecnologia (07/21 - Atual)',
         href: '',
         descricao: '', //Optional
         atividades: [
@@ -27,7 +27,7 @@ const descricoes = [
     {
         id: 3,
         titulo: 'Diretor de Tecnologia e Inovação (Voluntariado)',
-        empresa:'Einstein Floripa (09/19 - 12/20)',
+        empresa: 'Einstein Floripa (09/19 - 12/20)',
         href: '',
         descricao: 'Cursinho popular voltado a estudantes de baixa renda da grande Florianópolis, ofertado de maneira totalmente gratuita e realizado por estudantes universitários.', //Optional
         atividades: [
@@ -38,7 +38,7 @@ const descricoes = [
     {
         id: 4,
         titulo: 'Jovem Aprendiz - Itaú',
-        empresa:'Itaú Unibanco (02/20 - 11/20)',
+        empresa: 'Itaú Unibanco (02/20 - 11/20)',
         href: '',
         descricao: '', //Optional
         atividades: [
@@ -50,39 +50,34 @@ const descricoes = [
     {
         id: 5,
         titulo: 'Estágio Financeiro',
-        empresa:'Grupo Nomura (11/19 - 01/20)',
+        empresa: 'Grupo Nomura (11/19 - 01/20)',
         href: '',
         descricao: 'Empresa multi-franqueada de varejo na linha de calçados e vestuários contendo no portfólio empresas como: Arezzo, Schutz e Adidas.', //Optional
         atividades: [
             "Recebimento, verificação e programação de pagamentos (D-2) de todas as razões sociais administradas pela empresa (matriz e filiais).",
             "Desenvolvimento de planilha automatizada para análise de custos utilizando gráficos e VBA para busca e importação de arquivos."
         ]
-    }   
+    }
 ]
 
 
-function Descricao(){
+function Descricao({ descricao }) {
     return (
         <div className="text-primary">
-            {descricoes.map(descricao => {
-                return (
-                    <section>
-                        <h2>{descricao.titulo}</h2>
-                        <h3>{descricao.empresa}</h3>
-                        <p>{descricao.descricao}</p>
-                        <ul>
-                        {descricao.atividades.map(descricao => {
-                            return (
-                                <li>{descricao}</li>
-                            )
-                        })} 
-                        </ul>
-                    </section>
-                )
-            })}
+            <section>
+                <h2>{descricao.titulo}</h2>
+                <h3>{descricao.empresa}</h3>
+                <p>{descricao.descricao}</p>
+                <ul>
+                    {descricao.atividades.map(descricao => {
+                        return (
+                            <li>{descricao}</li>
+                        )
+                    })}
+                </ul>
+            </section>
         </div>
-
     )
 }
 
-export {descricoes, Descricao}
+export { descricoes, Descricao }

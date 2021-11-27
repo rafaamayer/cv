@@ -1,4 +1,4 @@
-import ListaHabilitidades from "./Habilidades.js"
+import { listaHabilidades, ListaHabilitidades } from "./Habilidades.js"
 
 export default function FormacaoEHabilidade(){
     return (
@@ -7,7 +7,10 @@ export default function FormacaoEHabilidade(){
             <h2>Universidade Federal de Santa Catarina</h2>
             <br/>
             <h3>Economia (2019 -2023)</h3>
-            <ListaHabilitidades />
+            {listaHabilidades.map(habilidade => (
+                <ListaHabilitidades habilidade={habilidade}/>
+            ))}
+            
         </div>
 
     )
