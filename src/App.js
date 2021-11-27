@@ -9,7 +9,7 @@ export default function App(props) {
         <h1 className="text-4xl font-black">{props.name}</h1>
         <h2 className="my-3 text-xl">{props.objective}</h2>
       </div>
-      <Perfil email="rafa.m.mayer@hotmail.com" />
+      <Perfil />
       <FormacaoEHabilidade />
       <Experiencia />
     </section>

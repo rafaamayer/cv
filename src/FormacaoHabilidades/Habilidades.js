@@ -26,12 +26,11 @@ const listaHabilidades = [
 
 function ListaHabilitidades({habilidade}) {
     return (
-        <ul>
-            <label>{habilidade.tipo}</label>
-
+        <ul className="bg-tertiary p-2 m-3 rounded-xl">
+            <h4 className="font-bold text-primary text-center">{habilidade.tipo}</h4>
             {habilidade.habilidades.map((habilidade, index) => {
                 return (
-                    <li key={index}>{habilidade}</li>
+                    <li key={index} className="my-2 mx-4">{habilidade}</li>
                 )
             })}
         </ul>
