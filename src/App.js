@@ -1,5 +1,6 @@
 import Perfil from "./Perfil/Perfil.js"
-import FormacaoEHabilidade from "./FormacaoHabilidades/FormacaoEHabilidades.js"
+import FormacaoEHabilidade from "./FormacaoHabilidades/FormacaoHabilidades.js"
+import Experiencia from "./Experiencia/Experiencia.js"
 
 export default function App(props) {
   return (
@@ -10,6 +11,7 @@ export default function App(props) {
       </div>
       <Perfil email="rafa.m.mayer@hotmail.com" />
       <FormacaoEHabilidade />
+      <Experiencia />
     </section>
   )
 }
