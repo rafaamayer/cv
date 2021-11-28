@@ -60,14 +60,14 @@ const descricoes = [
     }
 ]
 
-//TODO ==> Dinamic render class in description 
+//TODO ==> Dinamic render class in description
 function Descricao({ descricao }) {
     return (
         <div className="text-primary">
             <section>
                 <h2 className="text-center font-extrabold mb-3 text-xl">{descricao.titulo}</h2>
                 <h3 className="text-center font-bold my-2 text-lg">{descricao.empresa}</h3>
-                <p className="my-3 text-justify bg-tertiary p-3 m-1 rounded-md">{descricao.descricao}</p> 
+                <p className={`my-3 text-justify p-3 m-1 rounded-md ${descricao.descricao == '' ? 'hidden': 'bg-tertiary'}`}>{descricao.descricao}</p> 
                 <ul>
                     {descricao.atividades.map((descricao, index) => {
                         return (
