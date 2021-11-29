@@ -1,8 +1,8 @@
 export default function Localidade(props){
     return (
-        <div className="text-center m-3">
-            <strong> Localidade: </strong>     
-            <p> {props.localidade} </p>     
+        <div className="text-center m-3 sm:text-left sm:flex sm:m-0 sm:pt-2">
+            <strong>Localidade: </strong>     
+            <p className="sm:ml-1"> {props.localidade} </p>     
         </div> 
     )
 }
