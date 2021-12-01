@@ -1,3 +1,5 @@
 # Currículo - SPA 
 
-Currículo em SPA utilizando Tailwind e React.
+SPA CV using Tailwind and React.
+
+There might be a lot of UI improvements!
