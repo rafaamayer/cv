@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name="Rafael Mayer" objective="Objetivo: Estágio Front-End"/>
+    <App name="Rafael Mayer" objective="Objetivo: Estágio"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
